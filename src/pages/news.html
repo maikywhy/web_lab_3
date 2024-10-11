@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новини</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .news-item {
+            display: flex;
+            margin-bottom: 20px;
+            border: 1px solid #ddd; /* Обрамлення */
+            border-radius: 5px; /* Закруглені кути */
+            overflow: hidden; /* Сховати все, що виходить за межі */
+        }
+        .news-image {
+            flex: 0 0 150px; /* Ширина зображення */
+            height: 100px; /* Висота зображення */
+            object-fit: cover; /* Пропорційне масштабування */
+        }
+        .news-content {
+            padding: 10px;
+            flex-grow: 1; /* Заповнити доступний простір */
+        }
+        .news-title {
+            font-size: 18px;
+            margin: 0 0 10px 0;
+        }
+        .news-date {
+            color: #888;
+            font-size: 14px;
+        }
+        .news-description {
+            margin: 10px 0;
+        }
+        .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF; /* Колір фону */
+            padding: 5px 10px; /* Внутрішні відступи */
+            border-radius: 5px; /* Закруглені кути */
+        }
+        .read-more:hover {
+            background-color: #0056b3; /* Темніший колір при наведенні */
+        }
+    </style>
+</head>
+<body>
+    <h1>Новини</h1>
+
+    <div class="news-item">
+        <img src="C:\Users\Lenovo\web_lab2\src\assets\images\14325364.jpg" alt="Новина 1" class="news-image">
+        <div class="news-content">
+            <h2 class="news-title">Експертна група Національного агентства із забезпечення якості вищої освіти запрошує долучитися до відкритої зустрічі</h2>
+            <p class="news-date">Дата: 08.10.2024</p>
+            <p class="news-description">Відповідно до програми візиту експертної групи, у вівторок, 15 жовтня, відбудеться відкрита зустріч із усіма охочими учасниками/цями освітнього процесу (крім гарантів ОПП та представників/ць адміністрації ЗВО).</p>
+            <a href="https://www.znu.edu.ua/cms/index.php?action=news/view_details&news_id=63521&lang=ukr&news_code=ekspertna-grupa-natsionalnogo-agentstva-iz-zabezpechennya-yakosti-vischoyi-osviti-zaproshu---doluchitisya-do-vidkritoyi-zustrichi63521-ukr" class="read-more" target="_blank">Читати далі</a>
+        </div>
+    </div>
+
+    <div class="news-item">
+        <img src="C:\Users\Lenovo\web_lab2\src\assets\images\353.jpg" alt="Новина 2" class="news-image">
+        <div class="news-content">
+            <h2 class="news-title">ЗНУ запрошує майбутніх вступників на курси підготовки до НМТ-2025 і творчих конкурсів</h2>
+            <p class="news-date">Дата: 27.08.2024</p>
+            <p class="news-description">Запорізький національний університет (ZNU, Zaporizhzhia National University) оголошує набір на 8-місячні курси підготовки до національного мультипредметного тесту (НМТ-2025) та творчих конкурсів.</p>
+            <a href="https://www.znu.edu.ua/cms/index.php?action=news/view_details&news_id=63272&lang=ukr&news_code=znu-zaproshu---majbutnikh-vstupnikiv-na-kursi-pidgotovki-do-nmt-2025-i-tvorchikh-konkursiv" class="read-more" target="_blank">Читати далі</a>
+        </div>
+    </div>
+
+    <div class="news-item">
+        <img src="C:\Users\Lenovo\web_lab2\src\assets\images\jfgffg.jpg" alt="Новина 3" class="news-image">
+        <div class="news-content">
+            <h2 class="news-title">Центр інтенсивного вивчення іноземних мов запрошує на курси</h2>
+            <p class="news-date">Дата: 27.09.2024</p>
+            <p class="news-description">Центр інтенсивного вивчення іноземних мов ЗНУ (ZNU, Zaporizhzhia National University) запрошує всіх охочих на такі інтенсивні курси іноземних мов: англійської, польської, іспанської. англійської мови за програмою «Мовна підготовка викладачів» та на підготовчі курси для вступу до магістратури.</p>
+            <a href="https://link-to-full-article3.com" class="read-more" target="_blank">Читати далі</a>
+        </div>
+    </div>
+
+    <div class="news-item">
+        <img src="C:\Users\Lenovo\web_lab2\src\assets\images\всрс р.jfif" alt="Новина 4" class="news-image">
+        <div class="news-content">
+            <h2 class="news-title">Зустріч ректора з колективом ФІФ</h2>
+            <p class="news-date">Дата: 11.10.2024</p>
+            <p class="news-description">Відбулася зустріч ректора Запорізького національного університету (ZNU, Zaporizhzhia National University) Миколи Фролова з колективом викладачів факультету іноземної філології.</p>
+            <a href="https://www.znu.edu.ua/cms/index.php?action=news/view_details&news_id=63561&lang=ukr&news_code=zustrich-rektora-z-kolektivom-f--f--zhive-spilkuvannya-zi-studentami--bezpechni-umovi-navchannya-j-pogliblennya-profori--ntatsiyi" class="read-more" target="_blank">Читати далі</a>
+        </div>
+    </div>
+
+    <div class="news-item">
+        <img src="C:\Users\Lenovo\web_lab2\src\assets\images\ектт.jpg" alt="Новина 5" class="news-image">
+        <div class="news-content">
+            <h2 class="news-title">Освітні реалії та перспективи прифронтового Запоріжжя обговорили на симпозіумі в ЗНУ</h2>
+            <p class="news-date">Дата: 11.10.2024</p>
+            <p class="news-description">Короткий опис новини 5. Це місце для стислого викладу основних моментів.</p>
+            <a href="https://www.znu.edu.ua/cms/index.php?action=news/view_details&news_id=63559&lang=ukr&news_code=osvitni-realiyi-ta-perspektivi-prifrontovogo-zaporizhzhya-obgovorili-na-simpoziumi-v-znu" class="read-more" target="_blank">Читати далі</a>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="photo.html">Фотогалерея</a></li>
+            <li><a href="news.html">Останні новини</a></li>
+            <li><a href="rozklad.html">Мій розклад</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>

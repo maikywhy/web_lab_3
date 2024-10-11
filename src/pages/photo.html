@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея Фото</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .photo {
+            text-align: center;
+        }
+        .photo img {
+            width: 150px;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+            transition: transform 0.2s; 
+        }
+        .photo img:hover {
+            transform: scale(1.05);
+        }
+        .caption {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Галерея</h1>
+    
+    <div class="gallery">
+        <div class="photo">
+            <a href="C:\Users\Lenovo\web_lab2\src\assets\images\photo_2024-10-11_14-52-39.jpg" target="_blank">
+                <img src="C:\Users\Lenovo\web_lab2\src\assets\images\photo_2024-10-11_14-52-39.jpg" alt="Назва 1">
+            </a>
+            <div class="caption">Кіт на підлозі</div>
+        </div>
+        
+        <div class="photo">
+            <a href="C:\Users\Lenovo\web_lab2\src\assets\images\photo_2024-10-11_14-52-41.jpg" target="_blank">
+                <img src="C:\Users\Lenovo\web_lab2\src\assets\images\photo_2024-10-11_14-52-41.jpg" alt="Назва 2">
+            </a>
+            <div class="caption">Кіт на підвиконні</div>
+        </div>
+        
+        <div class="photo">
+            <a href="C:\Users\Lenovo\web_lab2\src\assets\images\photo_2024-10-11_14-52-47.jpg" target="_blank">
+                <img src="C:\Users\Lenovo\web_lab2\src\assets\images\photo_2024-10-11_14-52-47.jpg" alt="Назва 3">
+            </a>
+            <div class="caption">Кіт з бодуна</div>
+        </div>
+        
+        <div class="photo">
+            <a href="C:\Users\Lenovo\web_lab2\src\assets\images\photo_2024-10-11_14-52-45.jpg" target="_blank">
+                <img src="C:\Users\Lenovo\web_lab2\src\assets\images\photo_2024-10-11_14-52-45.jpg" alt="Назва 4">
+            </a>
+            <div class="caption">Поза сфінкса</div>
+        </div>
+
+        <div class="photo">
+            <a href="C:\Users\Lenovo\web_lab2\src\assets\images\photo_2024-10-11_14-52-42.jpg" target="_blank">
+                <img src="C:\Users\Lenovo\web_lab2\src\assets\images\photo_2024-10-11_14-52-42.jpg" alt="Назва 5">
+            </a>
+            <div class="caption">Папуга верх ногами</div>
+        </div>
+
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="photo.html">Фотогалерея</a></li>
+            <li><a href="news.html">Останні новини</a></li>
+            <li><a href="rozklad.html">Мій розклад</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

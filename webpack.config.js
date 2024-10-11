@@ -1,30 +1,22 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
     entry: './src/index.js',
+    mode: 'development',
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-        new CleanWebpackPlugin(),
-        new HtmlWebpackPlugin({
-            filename: 'index.html',
-            template: './src/pages/index.html',
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'about.html',
-            template: './src/pages/about.html',
+        new CopyWebpackPlugin({
+            patterns: [
+                {
+                    from: path.resolve(__dirname, 'src/assets/images'), 
+                    to: path.resolve(__dirname, 'dist/assets/images'),
+                    noErrorOnMissing: true,
+                },
+            ],
         }),
     ],
-    devServer: {
-        static: {
-            directory: path.resolve(__dirname, 'dist'),
-        },
-        port: 9000,
-        open: true,
-    },
 };
